@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<head>
+<link href="style.css" rel="stylesheet">
+<title>Amy Mitten's Photography</title>
+<link rel="stylesheet" href=".\MaxImage-master\lib\css\jquery.maximage.css" type="text/css" media="screen" title="CSS" charset="utf-8" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src=".\cycle.js" type="text/javascript"></script>
+<script src=".\easing.js"></script>
+<script src=".\MaxImage-master\lib\js\jquery.maximage.min.js" type="text/javascript"></script>
+<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="home">
+	<header class="nav">
+		<h1><a href="./index.html">Amy Mittens Photography</a></h1>
+		<ul>
+			<li><a href="./landscape.html">Landscape</a></li>
+			<li><a href="./music.html">Music</a></li>
+			<li><a href="./portrait.html">Portrait</a></li>
+			<li><a href="./event.html">Event</a></li>
+		</ul>
+	</header>
+<div id="maximage">
+	<img src="http://i1347.photobucket.com/albums/p708/AMittensPhotography/IMG_0431_zps086e5571.jpg" alt="" width="100%" height="100%"/>
+	<img src="http://i1347.photobucket.com/albums/p708/AMittensPhotography/IMG_0524_zpsaaf2ffd5.jpg" alt="" width="100%" height="100%"/>
+	<img src="http://i1347.photobucket.com/albums/p708/AMittensPhotography/violin_zps6cdd8d91.jpg" alt="" width="100%" height="100%"/>
+	<img src="http://i1347.photobucket.com/albums/p708/AMittensPhotography/IMG_0527_zps51957e8c.jpg" alt="" width="100%" height="100%"/>
+	<img src="http://i1347.photobucket.com/albums/p708/AMittensPhotography/IMG_0456_zps7e494aac.jpg" alt="" width="100%" height="100%"/>	
+</div>
+
+
+<script type="text/javascript" charset="utf-8">
+$(function(){
+    $('#maximage').maximage({
+        cycleOptions: {
+            fx: 'fade',
+            speed: 1000,
+            timeout: 5000,
+            
+        },
+        onFirstImageLoaded: function(){
+            jQuery('#cycle-loader').hide();
+            jQuery('#maximage').fadeIn('slow');
+        }
+    });
+});
+
+
+</script>
+
+</div>
+</body>
